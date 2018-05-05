@@ -1,0 +1,17 @@
+{%  extends 'base.html' %}
+{% load static %}
+{% block title %}注册{% endblock %}
+{% block main %}
+
+        <h1>注册页面：</h1>
+        <form method = 'post' enctype="multipart/form-data">
+            {{uf.as_p}}
+            {{errors}}
+            </br>
+            <input type="submit" value = "ok" />
+        </form>
+{% endblock %}
+
+{% block bottomjs %}
+    <script src="{% static "js/index.js" %}"></script>
+{% endblock %}

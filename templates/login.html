@@ -1,0 +1,14 @@
+{%  extends 'base.html' %}
+{% load static %}
+{% block title %}登录{% endblock %}
+{% block main %}
+        <h1>登录页面：</h1>
+        <form role="form" method = 'post' enctype="multipart/form-data">
+            {{uf.as_p}}
+            <input type="submit" value = "ok" />
+        </form>
+{% endblock %}
+
+{% block bottomjs %}
+    <script src="{% static "js/index.js" %}"></script>
+{% endblock %}

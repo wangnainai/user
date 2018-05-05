@@ -1,0 +1,16 @@
+{%  extends 'base.html' %}
+{% load static %}
+{% block title %}成功{% endblock %}
+{% block main %}
+        <form method = 'post'>
+            <h1>恭喜,{{operation}}成功！</h1>
+            </br>
+            <a href="/account/login/" target="_blank"> 前往登陆页面 </a>
+            </br>
+            <a href="/account/register/" target="_blank"> 前往注册页面 </a>
+        </form>
+{% endblock %}
+
+{% block bottomjs %}
+    <script src="{% static "js/index.js" %}"></script>
+{% endblock %}
